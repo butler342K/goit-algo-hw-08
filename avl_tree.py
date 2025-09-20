@@ -136,18 +136,18 @@ def inorder_traversal(node):
     return inorder_traversal(node.left) + [node] + inorder_traversal(node.right)
 
 # Driver program to test the above functions
-root = None
-keys = [10, 20, 30, 25, 28, 27, -1, 5, 6,-3]
+# root = None
+# keys = [10, 20, 30, 25, 28, 27, -1, 5, 6,-3]
 
-for key in keys:
-    root = insert(root, key)
-    print("AVL-Дерево:")
-    print(root)
+# for key in keys:
+#     root = insert(root, key)
+#     print("AVL-Дерево:")
+#     print(root)
 
 
-min_value = min_value_node(root)
-print("Мінімальне значення в дереві:", min_value.key)
-sum_values = sum(node.key for node in inorder_traversal(root))
-print("Сума всіх значень в дереві:", sum_values)
+# min_value = min_value_node(root)
+# print("Мінімальне значення в дереві:", min_value.key)
+# sum_values = sum(node.key for node in inorder_traversal(root))
+# print("Сума всіх значень в дереві:", sum_values)
 
 
